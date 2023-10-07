@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import facebook from "../assets/facebook_icon.png";
+import instagram from "../assets/instagram_icon.png";
+import x from "../assets/x_icon.png";
 
 function Header() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -8,17 +12,20 @@ function Header() {
   };
 
   return (
-    <div className="drawer">
+    <div className="drawer bg-bgsBg py-3 px-3">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}
         {/* Replace the "Open drawer" button with a navicon */}
-        <label htmlFor="my-drawer" className="btn btn-primary drawer-button">
+        <label
+          htmlFor="my-drawer"
+          className="btn btn-primary drawer-button bg-navicon border-0"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="navicon"
             viewBox="0 0 24 24"
-            className="inline-block w-6 h-6 stroke-current"
+            className="inline-block w-6 h-6 stroke-current outline-none"
           >
             <path
               strokeLinecap="round"
@@ -29,6 +36,7 @@ function Header() {
           </svg>
         </label>
       </div>
+
       <div className={`drawer-side ${isSidebarVisible ? "active" : ""}`}>
         <label
           htmlFor="my-drawer"
@@ -40,7 +48,9 @@ function Header() {
           {/* Sidebar content here */}
 
           <button
-            className="btn btn-square btn-ghost"
+            className={`btn btn-square btn-ghost ${
+              isSidebarVisible ? "active" : ""
+            }`}
             onClick={toggleSidebar}
             style={{ position: "absolute", top: "0rem", left: "1rem" }}
           >
@@ -63,7 +73,7 @@ function Header() {
             <a>HOME</a>
           </li>
           <li>
-            <a>PILOT</a>
+            <Link to="/Pilot">PILOT</Link>
           </li>
           <li>
             <a>CHARACTERS</a>
@@ -74,6 +84,20 @@ function Header() {
           <li>
             <a>INVEST</a>
           </li>
+          <li>
+            #BlackSparkleGirls
+          </li>
+          <div className="flex w-1/4">
+            <a>
+              <img src={facebook} />
+            </a>
+            <a>
+              <img src={instagram} />
+            </a>
+            <a>
+              <img src={x} />
+            </a>
+          </div>
         </ul>
       </div>
     </div>

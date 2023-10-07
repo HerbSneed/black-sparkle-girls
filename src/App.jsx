@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Landing from "./pages/Landing";
+
+import { Outlet } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
@@ -8,10 +10,8 @@ function App() {
     <>
       <Header />
       <main>
-        <Landing>
-        </Landing>
+        <Outlet/>
       </main>
-      <Footer />
     </>
   );
 }

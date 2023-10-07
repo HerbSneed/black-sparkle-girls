@@ -11,6 +11,7 @@ export default {
       transparent: 'transparent',
       current: 'currentColor',
       'bgsBg': '#4E6A80',
+      'navicon': '#E88C35',
     },
     extend: {},
   },

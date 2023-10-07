@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn.drawer-button svg {
+  outline: none;
+}
