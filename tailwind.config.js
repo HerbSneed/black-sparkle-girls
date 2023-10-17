@@ -12,8 +12,19 @@ export default {
       current: 'currentColor',
       'bgsBg': '#4E6A80',
       'navicon': '#E88C35',
+      'bgsBgYellow': '#FAE347',
+      'bgsBgPurple': '#AC99C7',
+      'bgsBgGreen': '#33B58F',
+      'bgsBgRed': '#922A04',
+      'bgsBgBlue': '#6FBCF2',
+      'bgsBgOrange': '#E88C35',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'gloria': ['Gloria Hallelujah', 'cursive'],
+        'noticia': ['Noticia Text', 'serif'],
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin'),

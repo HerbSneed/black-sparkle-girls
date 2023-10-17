@@ -1,7 +1,9 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-import { Outlet } from "react-router-dom";
+import Landing from "./components/Landing";
+import Synopsis from "./components/Synopsis";
+import Characters from "./components/Character";
+import Pilot from "./components/Pilot";
 
 import "./App.css";
 
@@ -10,8 +12,12 @@ function App() {
     <>
       <Header />
       <main>
-        <Outlet/>
+        <Landing />
+        <Synopsis />
+        <Characters />
+        <Pilot />
       </main>
+      <Footer />
     </>
   );
 }
