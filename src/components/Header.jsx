@@ -1,45 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import facebook from "../assets/facebook_icon.png";
-import instagram from "../assets/instagram_icon.png";
-import x from "../assets/x_icon.png";
 import navLogo from "../assets/bgs-nav.png";
 
 function Header() {
   return (
     <nav className="relative menu w-full bg-base-900 h-24">
-      <div className="w-44 ml-4">
-        <img src={navLogo} alt='black girl sparkle logo'/>
+      <div className="relative w-44 ml-4">
+        <div className="border-inset-gradient"></div>
+        <img src={navLogo} alt="black girl sparkle logo" />
       </div>
-      <div className="absolute inset-0 flex justify-center items-center">
-
+      <div className="absolute inset-0 flex justify-end items-center">
         <div className="font-gloria text-base-content flex flex-row font-extrabold text-xl">
-          <Link to="/Pilot" className="mr-5">
+          <a
+            href="#pilot-section"
+            className="mr-5 hover:text-bgsBgBlue hover:drop-shadow-md"
+          >
             PILOT
-          </Link>
-          <Link to="/Characters" className="mr-5">
-            CHARACTERS
-          </Link>
-          <Link to="/Synopsis" className="mr-5">
+          </a>
+          <a
+            href="#character-section"
+            className="mr-5 hover:text-bgsBgPurple hover:drop-shadow-md"
+          >
+            THE GIRLS
+          </a>
+          <a
+            href="#synopsis-section"
+            className="mr-5 hover:text-bgsBgOrange hover:drop-shadow-md"
+          >
             SYNOPSIS
-          </Link>
-          <a href="mailto:hmsneed@gmail.com" target="_blank">
+          </a>
+          <a
+            href="#footer-section"
+            className="mr-5 hover:text-bgsBgRed hover:drop-shadow-md"
+          >
             CONTACT US
           </a>
         </div>
       </div>
-
-      <div className="absolute right-0 mr-4 flex w-1/12 mt-5 gap-x-1 ">
-        <a>
-          <img src={facebook} alt="Facebook" className="" />
-        </a>
-        <a>
-          <img src={instagram} alt="Instagram" className="" />
-        </a>
-        <a>
-          <img src={x} alt="X Logo" />
-        </a>
-      </div>
+      <div className="gradient-border"></div>
     </nav>
   );
 }

@@ -24,11 +24,16 @@ export default {
         'gloria': ['Gloria Hallelujah', 'cursive'],
         'noticia': ['Noticia Text', 'serif'],
       },
+      textShadow: {
+        'lg': '2px 2px 10px rgba(0, 0, 0, 0.5)',
+        // Define other shadow sizes and colors as needed
+      },
     },
   },
   plugins: [
     require('flowbite/plugin'),
     require("daisyui"),
+    require('tailwindcss-gradients'),
   ]
 }
 

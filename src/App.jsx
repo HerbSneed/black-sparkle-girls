@@ -12,12 +12,12 @@ function App() {
     <>
       <Header />
       <main>
-        <Landing />
-        <Synopsis />
-        <Characters />
-        <Pilot />
+        <Landing/>
+        <Synopsis/>
+        <Characters/>
+        <Pilot/>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 }
