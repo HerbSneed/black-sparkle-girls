@@ -35,7 +35,7 @@ function Synopsis() {
         <span className="text-bgsBgRed">s</span>
       </h2>
 
-      <p className="text-white -mt-3 drop-shadow-md mx-4 text-xl">
+      <p className="text-white text-center -mt-3 drop-shadow-md mx-4 text-xl">
         {displayedContent.split("\n").map((paragraph, index) => (
           <React.Fragment key={index}>
             {paragraph}

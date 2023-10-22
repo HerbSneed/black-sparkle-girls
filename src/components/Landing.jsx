@@ -2,9 +2,9 @@ import mainImage from "../assets/blacksparklegirls.png";
   
 function Landing() {
   return (
-    <div className="relative bg-bgsBg py-3 flex flex-col justify-center items-center">
+    <div className="relative bg-bgsBg py-2 flex flex-col justify-center items-center">
       <div className="gradient-border_3"></div>
-      <h2 className="font-extrabold text-center text-[40px] font-gloria drop-shadow-md">
+      <h2 className="font-extrabold text-center text-[40px] sm:text-[60px] font-gloria drop-shadow-md">
         <span className="text-bgsBgBlue">B</span>
         <span className="text-bgsBgPurple">l</span>
         <span className="text-bgsBgOrange">a</span>

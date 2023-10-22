@@ -4,7 +4,7 @@ function Pilot() {
   return (
     <div id="pilot-section" className="bg-bgsBg w-full flex flex-col justify-center items-center relative"
     >
-      <h1 className="drop-shadow-md w-full text-4xl text-center mt-2 text-white font-gloria">
+      <h1 className="drop-shadow-md w-full text-4xl md:text-[45px] text-center mt-2 md:mt-4 text-white font-gloria">
         <span className="text-bgsBgBlue">T</span>
         <span className="text-bgsBgPurple">h</span>
         <span className="text-bgsBgOrange">e</span>
@@ -37,7 +37,7 @@ function Pilot() {
         <span className="text-bgsBgGreen">c</span>
         <span className="text-bgsBgBlue">e</span>
       </h1>
-      <div className="mt-0 px-3">
+      <div className="mt-0 px-3 md:px-6">
         <video
           className="rounded-xl mt-4 mb-4"
           width="1080"
