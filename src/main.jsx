@@ -9,18 +9,13 @@ import {
 
 import App from './App.jsx'
 import Landing from "./components/Landing.jsx";
-import Header from "./components/Header";
-import Pilot from "./components/Pilot";
-import Girls from "./components/Character";
-import Synopsis from "./components/Synopsis";
-import ContactUs from "./components/Footer";
 
 
 import './index.css'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />} errorElement={<Error />}>
+    <Route path="/" element={<App />}>
       <Route index element={<Landing />} />
     </Route>
 

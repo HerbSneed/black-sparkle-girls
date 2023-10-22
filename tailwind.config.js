@@ -1,10 +1,13 @@
+import 'flowbite-react';
+import 'tailwindcss-gradients';
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.css",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     colors: {
@@ -26,14 +29,13 @@ export default {
       },
       textShadow: {
         'lg': '2px 2px 10px rgba(0, 0, 0, 0.5)',
-        // Define other shadow sizes and colors as needed
       },
     },
   },
   plugins: [
-    require('flowbite/plugin'),
-    require("daisyui"),
-    require('tailwindcss-gradients'),
+    'daisyui',
+    'tailwindcss-gradients',
+    'flowbite-react'
   ]
 }
 

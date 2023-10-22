@@ -1,13 +1,10 @@
-import React from "react";
 import PilotVid from "../assets/black_sparkle_girls.mp4";
 
 function Pilot() {
   return (
-    <div
-      id="pilot-section"
-      className="bg-bgsBg h-[720px] w-screen py-5 flex justify-center relative"
+    <div id="pilot-section" className="bg-bgsBg w-full flex flex-col justify-center items-center relative"
     >
-      <h1 className="absolute drop-shadow-md text-6xl mt-0 text-white font-gloria">
+      <h1 className="drop-shadow-md w-full text-4xl text-center mt-2 text-white font-gloria">
         <span className="text-bgsBgBlue">T</span>
         <span className="text-bgsBgPurple">h</span>
         <span className="text-bgsBgOrange">e</span>
@@ -40,9 +37,9 @@ function Pilot() {
         <span className="text-bgsBgGreen">c</span>
         <span className="text-bgsBgBlue">e</span>
       </h1>
-      <div className="mt-10">
+      <div className="mt-0 px-3">
         <video
-          className="rounded-xl mt-10"
+          className="rounded-xl mt-4 mb-4"
           width="1080"
           height="720"
           controls
@@ -51,7 +48,7 @@ function Pilot() {
           <source src={PilotVid} type="video/mp4" />
         </video>
       </div>
-      <div className="gradient-border"></div>
+      <div className="gradient-border_1"></div>
     </div>
   );
 }

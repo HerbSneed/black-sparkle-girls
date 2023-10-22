@@ -5,7 +5,7 @@ import Synopsis from "./components/Synopsis";
 import Characters from "./components/Character";
 import Pilot from "./components/Pilot";
 
-import "./App.css";
+import "./index.css";
 
 function App() {
   return (

@@ -1,43 +1,88 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import navLogo from "../assets/bgs-nav.png";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="relative menu w-full bg-base-900 h-24">
-      <div className="relative w-44 ml-4">
-        <div className="border-inset-gradient"></div>
-        <img src={navLogo} alt="black girl sparkle logo" />
-      </div>
-      <div className="absolute inset-0 flex justify-end items-center">
-        <div className="font-gloria text-base-content flex flex-row font-extrabold text-xl">
-          <a
-            href="#pilot-section"
-            className="mr-5 hover:text-bgsBgBlue hover:drop-shadow-md"
-          >
-            PILOT
-          </a>
-          <a
-            href="#character-section"
-            className="mr-5 hover:text-bgsBgPurple hover:drop-shadow-md"
-          >
-            THE GIRLS
-          </a>
-          <a
-            href="#synopsis-section"
-            className="mr-5 hover:text-bgsBgOrange hover:drop-shadow-md"
-          >
-            SYNOPSIS
-          </a>
-          <a
-            href="#footer-section"
-            className="mr-5 hover:text-bgsBgRed hover:drop-shadow-md"
-          >
-            CONTACT US
-          </a>
+    <nav className="relative bg-base-900 py-2">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+        <div className="relative w-44 ml-0">
+          <div className="border-inset-gradient"></div>
+          <img src={navLogo} alt="black girl sparkle logo" />
         </div>
+
+        <button
+          type="button"
+          className="inline-flex items-center justify-center mr-4 p-2 w-10 h-10 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        {isMenuOpen && (
+          <div className="w-full">
+            <ul className="flex flex-col items-center font-gloria">
+              <li>
+                <a
+                  href="#pilot-section"
+                  className="hover:text-bgsBgBlue hover:drop-shadow-md"
+                  aria-current="page"
+                >
+                  PILOT
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#character-section"
+                  className="hover:text-bgsBgPurple hover:drop-shadow-md"
+                >
+                  THE GIRLS
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#synopsis-section"
+                  className="hover:text-bgsBgOrange hover:drop-shadow-md"
+                >
+                  SYNOPSIS
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#footer-section"
+                  className="hover:text-bgsBgRed hover:drop-shadow-md"
+                >
+                  CONTACT US
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
-      <div className="gradient-border"></div>
     </nav>
   );
 }

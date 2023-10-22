@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Catrina from "../assets/Catrina.png";
 import Daijah from "../assets/Daijah.png";
 import Jade from "../assets/Jade.png";
@@ -8,23 +8,25 @@ function Characters() {
   return (
     <div
       id="character-section"
-      className="relative py-5 bg-bgsBgYellow h-[700px] w-screen "
+      className="relative py-4 bg-bgsBgYellow flex flex-col justify-center w-screen "
     >
       <h2 className="text-center text-5xl text-white font-bold font-gloria drop-shadow-md">
-        <span className="text-bgsBgBlue">C</span>
-        <span className="text-bgsBgPurple">H</span>
-        <span className="text-bgsBgOrange">A</span>
-        <span className="text-bgsBgGreen">R</span>
-        <span className="text-bgsBgRed">A</span>
-        <span className="text-bgsBgGreen">C</span>
         <span className="text-bgsBgBlue">T</span>
-        <span className="text-bgsBgPurple">E</span>
-        <span className="text-bgsBgOrange">R</span>
-        <span className="text-bgsBgGreen">S</span>
+        <span className="text-bgsBgPurple">h</span>
+        <span className="text-bgsBgOrange">e</span>
+        <span className="text-bgsBgGreen"> </span>
+        <span className="text-bgsBgRed">G</span>
+        <span className="text-bgsBgGreen">i</span>
+        <span className="text-bgsBgBlue">r</span>
+        <span className="text-bgsBgPurple">l</span>
+        <span className="text-bgsBgOrange">s</span>
       </h2>
-      <ul className="grid grid-cols-4 gap-x-0 mt-5 ">
+
+      <ul className="grid grid-cols-1 gap-y-4 w-screen mt-2 ">
+        
         <li className="border-4 border-bgsBgRed w-11/12 mx-auto rounded-xl bg-bgsBgRed drop-shadow-xl pb-1">
-          <div className="h-96 overflow-hidden rounded-t-lg bg-white ">
+
+          <div className="h-96 overflow-hidden w-full rounded-t-lg bg-white ">
             <img
               className="w-full transform -translate-x-8 -translate-y-3 object-cover"
               src={Catrina}
@@ -97,7 +99,7 @@ function Characters() {
           </p>
         </li>
       </ul>
-      <div className="gradient-border"></div>
+      <div className="gradient-border_2"></div>
     </div>
   );
 }

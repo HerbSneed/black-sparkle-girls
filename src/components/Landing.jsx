@@ -1,13 +1,10 @@
-import React, { useState } from "react";
 import mainImage from "../assets/blacksparklegirls.png";
-import PilotVid from "../assets/black_sparkle_girls.mp4";
-
   
 function Landing() {
   return (
-    <div className="relative bg-bgsBg h-[850px] w-screen flex flex-col justify-center items-center">
-      <img className="absolute object-contain" src={mainImage} />
-      <h2 className="absolute bottom-8 font-extrabold text-center text-7xl font-gloria drop-shadow-lg">
+    <div className="relative bg-bgsBg py-3 flex flex-col justify-center items-center">
+      <div className="gradient-border_3"></div>
+      <h2 className="font-extrabold text-center text-[40px] font-gloria drop-shadow-md">
         <span className="text-bgsBgBlue">B</span>
         <span className="text-bgsBgPurple">l</span>
         <span className="text-bgsBgOrange">a</span>
@@ -28,7 +25,8 @@ function Landing() {
         <span className="text-bgsBgOrange">l</span>
         <span className="text-bgsBgYellow">s</span>
       </h2>
-      <div className="gradient-border"></div>
+      <img className="drop-shadow-md mb-3" src={mainImage} />
+      <div className="gradient-border_1"></div>
     </div>
   );
 }
