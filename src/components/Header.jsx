@@ -9,9 +9,9 @@ function Header() {
   };
 
   return (
-    <nav className="relative bg-base-900 py-2 px-2">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-        <div className="relative w-44 ml-0">
+    <nav className="relative bg-base-900 md:px-4 py-2 px-2 sm:px-4 md:px-6 2xl:px-8">
+      <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto">
+        <div className="relative w-44">
           <div className="border-inset-gradient"></div>
           <img src={navLogo} alt="black girl sparkle logo" />
         </div>

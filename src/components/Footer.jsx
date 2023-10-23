@@ -9,11 +9,11 @@ function Footer() {
   return (
     <footer
       id="footer-section"
-      className="flex flex-col justify-center items-center w-full bg-base-200"
+      className="flex flex-col justify-center items-center w-full py-2 bg-base-200"
     >
-      <h2 className="font-gloria text-3xl">SOCIALS</h2>
+      <h2 className="font-gloria text-3xl sm:text-4xl">SOCIALS</h2>
 
-      <div className="flex flex-row w-5/12 justify-center mt-0 gap-x-1 ">
+      <div className="flex flex-row w-4/12 sm:w-3/12 lg:w-2/12 justify-center mt-0 gap-x-1 ">
         <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <img
             href="https://www.instagram.com"
@@ -35,8 +35,8 @@ function Footer() {
         </a>
       </div>
 
-      <div className="w-full flex flex-row items-center -mt-2 justify-center">
-        <img className="w-1/12 ml-0 mt-1" src={nelTv} />
+      <div className="w-1/4 flex flex-row items-center -mt-0 sm:-mt-1 justify-center">
+        <img className="w-4/12 md:w-3/12 lg:w-2/12 ml-0 mt-1" src={nelTv} />
         <p className="ml-1 mt-3 text-base-content font-semibold">
           ©™4Ever22Films
         </p>

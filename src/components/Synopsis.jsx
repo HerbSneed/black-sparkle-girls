@@ -22,9 +22,9 @@ function Synopsis() {
   return (
     <div
       id="synopsis-section"
-      className="bg-bgsBgPurple w-screen py-2 flex flex-col justify-center items-center relative"
+      className="bg-bgsBgPurple w-screen py-2 lg:px-4 flex flex-col justify-center items-center relative"
     >
-      <h2 className="drop-shadow-md text-white text-center text-5xl font-gloria font-bold ">
+      <h2 className="drop-shadow-md text-white text-center text-5xl sm:text-[60px] lg:text-[80px]  xl:text-[90px] font-gloria font-bold ">
         <span className="text-bgsBgBlue">S</span>
         <span className="text-bgsBgGreen">y</span>
         <span className="text-bgsBgOrange">n</span>
@@ -35,7 +35,7 @@ function Synopsis() {
         <span className="text-bgsBgRed">s</span>
       </h2>
 
-      <p className="text-white text-center -mt-3 drop-shadow-md mx-4 text-xl">
+      <p className="text-white text-center -mt-3 lg:mt-1 drop-shadow-md mx-4 text-xl">
         {displayedContent.split("\n").map((paragraph, index) => (
           <React.Fragment key={index}>
             {paragraph}
