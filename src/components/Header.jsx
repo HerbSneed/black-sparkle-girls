@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import navLogo from "../assets/bgs-nav.png";
 
 function Header() {
