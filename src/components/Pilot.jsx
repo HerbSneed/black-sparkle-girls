@@ -1,4 +1,5 @@
 import PilotVid from "../assets/black_sparkle_girls.mp4";
+import Poster from "../assets/bgsScreenshot.png";
 
 function Pilot() {
   return (
@@ -45,7 +46,7 @@ function Pilot() {
           width="1080"
           height="720"
           controls
-          poster="../src/assets/bgsScreenshot.png"
+          poster={Poster}
         >
           <source src={PilotVid} type="video/mp4" />
         </video>
