@@ -7,7 +7,8 @@ function Pilot() {
       id="pilot-section"
       className="bg-bgsBg w-full flex py-3 flex-col justify-center items-center relative"
     >
-      <h1 className="drop-shadow-md w-full text-[43px] leading-[43px] sm:leading-[50px] sm:text-[55px] md:text-[65px] md:leading-[60px] lg:text-[85px] lg:leading-[80px] xl:leading-[90px] xl:text-[90px] 2xl:text-[100px] 2xl:leading-[100px] xl:w-3/4 text-center md:mt-2 lg:mt-4 text-white font-gloria">
+      <h1 className="drop-shadow-md w-3/4 text-[43px] leading-[43px] sm:leading-[50px] sm:text-[55px] md:text-[65px] md:leading-[60px] lg:text-[85px] lg:leading-[80px] xl:leading-[90px] xl:text-[90px] 2xl:text-[100px] 2xl:leading-[100px] xl:w-3/4 text-center md:mt-2 lg:mt-4 lg:w-3/4
+      md:w-3/4 text-white font-gloria">
         <span className="text-bgsBgBlue">T</span>
         <span className="text-bgsBgPurple">h</span>
         <span className="text-bgsBgOrange">e</span>

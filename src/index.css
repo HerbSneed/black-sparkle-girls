@@ -5,6 +5,24 @@
 @tailwind utilities;
 
 
+
+/* Define the class for the content container */
+.content-container {
+  width: 100%; /* By default, it takes full width */
+}
+
+/* Apply the fixed width when the screen width exceeds 1536px */
+@media (min-width: 1536px) {
+  .content-container {
+    width: 1536px; /* Set the fixed width you want */
+    margin: 0 auto; /* Center align the content */
+  }
+}
+
+
+
+
+
 .border-inset-gradient {
   height: 8px; /* Adjust the height to match the border width */
   background: linear-gradient(to bottom, transparent, white);

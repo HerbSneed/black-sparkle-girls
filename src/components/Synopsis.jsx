@@ -22,7 +22,7 @@ function Synopsis() {
   return (
     <div
       id="synopsis-section"
-      className="bg-bgsBgPurple w-screen py-2 lg:px-4 flex flex-col justify-center items-center relative"
+      className="bg-bgsBgPurple w-full py-2 lg:px-4 flex flex-col justify-center items-center relative"
     >
       <h2 className="drop-shadow-md text-white text-center text-5xl sm:text-[60px] lg:text-[80px]  xl:text-[90px] font-gloria font-bold ">
         <span className="text-bgsBgBlue">S</span>
@@ -35,7 +35,7 @@ function Synopsis() {
         <span className="text-bgsBgRed">s</span>
       </h2>
 
-      <p className="text-white text-center -mt-3 lg:mt-1 drop-shadow-md mx-4 text-xl">
+      <p className="text-white text-center -mt-3 font-gloria lg:mt-1 drop-shadow-md mx-4 text-xl xl:text-2xl">
         {displayedContent.split("\n").map((paragraph, index) => (
           <React.Fragment key={index}>
             {paragraph}
@@ -43,24 +43,23 @@ function Synopsis() {
           </React.Fragment>
         ))}
       </p>
+        {!isExpanded && (
+          <button
+            className="text-blue-500 float-right cursor-pointer"
+            onClick={handleShowMore}
+          >
+            Read More
+          </button>
+        )}
 
-      {!isExpanded && (
-        <button
-          className="text-blue-500 cursor-pointer"
-          onClick={handleShowMore}
-        >
-          Read More
-        </button>
-      )}
-
-      {isExpanded && (
-        <button
-          className="text-blue-500 cursor-pointer"
-          onClick={handleShowMore}
-        >
-          Read Less
-        </button>
-      )}
+        {isExpanded && (
+          <button
+            className="text-blue-500  cursor-pointer"
+            onClick={handleShowMore}
+          >
+            Read Less
+          </button>
+        )}
       <div className="gradient-border_2"></div>
     </div>
   );

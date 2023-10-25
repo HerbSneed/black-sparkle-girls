@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <Landing/>
-        <Synopsis/>
-        <Characters/>
-        <Pilot/>
+      <main className="content-container">
+        <Landing />
+        <Synopsis />
+        <Characters />
+        <Pilot />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
