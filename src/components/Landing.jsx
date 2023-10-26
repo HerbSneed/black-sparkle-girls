@@ -1,4 +1,4 @@
-import mainImage from "../assets/blacksparklegirls.png";
+import mainImage from "../assets/blacksparklegirls.webp";
   
 function Landing() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import navLogo from "../assets/bgs-nav.png";
+import navLogo from "../assets/bgs-nav.webp";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

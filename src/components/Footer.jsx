@@ -1,9 +1,9 @@
 // import React from "react";
-import facebook from "../assets/facebook_icon.png";
-import instagram from "../assets/instagram_icon.png";
-import email from "../assets/email-icon.png";
-import x from "../assets/x_icon.png";
-import nelTv from "../assets/nelTv-logo.png"
+import facebook from "../assets/facebook_icon.webp";
+import instagram from "../assets/instagram_icon.webp";
+import email from "../assets/email-icon.webp";
+import x from "../assets/x_icon.webp";
+import nelTv from "../assets/nelTv-logo.webp"
 
 function Footer() {
   return (

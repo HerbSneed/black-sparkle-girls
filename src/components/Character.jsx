@@ -1,8 +1,8 @@
 // import React from "react";
-import Catrina from "../assets/Catrina.png";
-import Daijah from "../assets/Daijah.png";
-import Jade from "../assets/Jade.png";
-import Mariah from "../assets/Mariah.png";
+import Catrina from "../assets/Catrina.webp";
+import Daijah from "../assets/Daijah.webp";
+import Jade from "../assets/Jade.webp";
+import Mariah from "../assets/Mariah.webp";
 
 function Characters() {
   return (

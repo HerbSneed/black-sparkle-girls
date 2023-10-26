@@ -1,5 +1,5 @@
 import PilotVid from "../assets/black_sparkle_girls.mp4";
-import Poster from "../assets/bgsScreenshot.png";
+import Poster from "../assets/bgsScreenshot.webp";
 
 function Pilot() {
   return (
