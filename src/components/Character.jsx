@@ -43,7 +43,7 @@ function Characters() {
         <li className="border-4 order-3 border-bgsBgBlue bg-bgsBgBlue rounded-xl w-11/12 mx-auto drop-shadow-xl">
           <div className="h-96 rounded-t-lg bg-white overflow-hidden">
             <img
-              className="w-full sm:w-3/4 xl:w-full -ml-3 sm:ml-14 md:ml-10 md:mt-3 transform -translate-y-9  object-cover xl:-translate-x-14"
+              className="w-full sm:w-3/4 xl:w-full -ml-3 sm:ml-14 md:ml-10 md:mt-3 transform -translate-y-9 object-cover xl:-translate-x-14"
               src={Daijah}
             />
           </div>
@@ -83,7 +83,7 @@ function Characters() {
           </h2>
           <p className="text-white text-center font-gloria text-xl mt-1 mx-2">
             Catrina is the brains of the bunch. She's a critical thinker with a
-            lover for dogs.
+            love for dogs.
           </p>
         </li>
       </ul>
