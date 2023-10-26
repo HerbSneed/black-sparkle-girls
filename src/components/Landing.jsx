@@ -26,7 +26,12 @@ function Landing() {
         <span className="text-bgsBgYellow">s</span>
       </h2>
       <img
-        className="md:mt-3 lg:mt-8 2xl:mt-10"
+        className="
+        md:mt-3
+        lg:mt-8
+        2xl:mt-10
+        w-full
+        h-auto"
         src={mainImage}
         alt="Black Girl Sparkle Logo"
       />
