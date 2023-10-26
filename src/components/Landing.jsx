@@ -25,7 +25,11 @@ function Landing() {
         <span className="text-bgsBgOrange">l</span>
         <span className="text-bgsBgYellow">s</span>
       </h2>
-      <img className="drop-shadow-md md:mt-3 lg:mt-8 2xl:mt-10" src={mainImage} />
+      <img
+        className="md:mt-3 lg:mt-8 2xl:mt-10"
+        src={mainImage}
+        alt="Black Girl Sparkle Logo"
+      />
       <div className="gradient-border_1"></div>
     </div>
   );

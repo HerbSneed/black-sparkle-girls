@@ -28,7 +28,7 @@ function Characters() {
             <img
               className="w-full sm:w-3/4 xl:w-full transform -translate-x-8 sm:-translate-x-0 xl:-translate-x-7 -translate-y-3 object-cover"
               src={Mariah}
-              alt="Catrina Image"
+              alt="Mariah Image"
             />
           </div>
           <h2 className="text-center font-gloria text-4xl sm:text-[60px]font-bold text-white ">
@@ -45,6 +45,7 @@ function Characters() {
             <img
               className="w-full sm:w-3/4 xl:w-full -ml-3 sm:ml-14 md:ml-10 md:mt-3 transform -translate-y-9 object-cover xl:-translate-x-14"
               src={Daijah}
+              alt="Daijah Image"
             />
           </div>
           <h2 className="text-center font-gloria text-4xl font-bold text-white ">
@@ -61,6 +62,7 @@ function Characters() {
             <img
               className="w-3/4 sm:w-2/4 md:w-3/4 xl:w-full mx-auto sm:mx-auto transform -translate-y-4 object-cover xl:-translate-x-0"
               src={Jade}
+              alt="Jade Image"
             />
           </div>
           <h2 className="text-center font-gloria text-4xl font-bold text-white ">
@@ -77,6 +79,7 @@ function Characters() {
             <img
               className="w-3/4 sm:w-2/4 md:w-3/4 xl:w-full mx-auto sm:mx-auto transform -translate-y-0 object-cover"
               src={Catrina}
+              alt="Catrina Image"
             ></img>
           </div>
           <h2 className="text-center font-gloria text-4xl font-bold text-white">
