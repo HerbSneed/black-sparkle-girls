@@ -13,7 +13,7 @@ function Footer() {
     >
       <h2 className="font-gloria text-3xl sm:text-4xl">SOCIALS</h2>
 
-      <div className="flex flex-row w-4/12 sm:w-3/12 lg:w-2/12 xl:w-2/12 2xl:w-2/12 justify-center mt-0 ml-1 space-x-1 ">
+      <div className="flex flex-row w-4/12 sm:w-3/12 md:w-[140px] lg:w-2/12 xl:w-[150px] 2xl:w-[150px] justify-center mt-0 ml-1 space-x-1 ">
         <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <img
             href="https://www.instagram.com"
@@ -30,15 +30,18 @@ function Footer() {
           <img src={x} alt="X Logo" />
         </a>
 
-        <a  href="mailto:pierreneltv@gmail.com" target="_blank" rel="noreferrer">
+        <a href="mailto:pierreneltv@gmail.com" target="_blank" rel="noreferrer">
           <img src={email} alt="email icon" />
         </a>
       </div>
 
-      <div className="w-full flex flex-row items-center -ml-4 -mt-5 sm:-mt-4 lg:-mt-6 xl:-mt-5 2xl:-mt-4 justify-center">
-        <img className="w-2/12 sm:w-1/12 md:w-1/12 lg:w-1/12 xl:w-[70px] ml-0 mt-1" src={nelTv} />
-        <p className="ml-1 mt-6 text-base-content font-semibold">
-          ©™ A Peggy Joyce’s Boy Production
+      <div className="w-full flex flex-row items-center -ml-4 -mt-5 sm:-mt-4 lg:-mt-6 xl:-mt-7 2xl:-mt-9 justify-center">
+        <img
+          className="w-[45px] sm:w-1/12 md:w-[45px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px] ml-0 mt-3 sm:mt-2 md:mt-3 lg:mt-4 xl:mt-3"
+          src={nelTv}
+        />
+        <p className="ml-1 mt-6 lg:mt-7 2xl:mt-9  text-base-content font-semibold 2xl:text-xl">
+          ©™ A Peggy Joyce&apos;s Boy Production
         </p>
       </div>
     </footer>

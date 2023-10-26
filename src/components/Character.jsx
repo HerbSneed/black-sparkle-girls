@@ -23,7 +23,6 @@ function Characters() {
       </h2>
 
       <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-4 w-full mt-2 lg:mt-4 ">
-
         <li className="border-4 border-bgsBgRed order-4 w-11/12 mx-auto rounded-xl bg-bgsBgRed drop-shadow-xl pb-1">
           <div className="h-96 overflow-hidden w-full rounded-t-lg bg-white ">
             <img
@@ -36,7 +35,8 @@ function Characters() {
             Mariah
           </h2>
           <p className="text-white text-xl text-center font-gloria mt-1 mx-2">
-            Mariah is the youngest sister. She's clumsy in the lab but solid in her pro-blackness.
+            Mariah is the youngest sister. She&apos;s clumsy in the lab but
+            solid in her pro-blackness.
           </p>
         </li>
 
@@ -67,7 +67,8 @@ function Characters() {
             Jade
           </h2>
           <p className="text-white text-center text-xl mt-1 font-gloria mx-2">
-            Jade's the leader of the Black Sparkle Girls. She's an athlete with a love for softball.
+            Jade&apos;s the leader of the Black Sparkle Girls. She&apos;s an
+            athlete with a love for softball.
           </p>
         </li>
 
@@ -82,8 +83,8 @@ function Characters() {
             Catrina
           </h2>
           <p className="text-white text-center font-gloria text-xl mt-1 mx-2">
-            Catrina is the brains of the bunch. She's a critical thinker with a
-            love for dogs.
+            Catrina is the brains of the bunch. She&apos;s a critical thinker
+            with a love for dogs.
           </p>
         </li>
       </ul>
