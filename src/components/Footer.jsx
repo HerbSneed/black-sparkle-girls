@@ -1,8 +1,6 @@
 // import React from "react";
 import facebook from "../assets/facebook_icon.webp";
-import instagram from "../assets/instagram_icon.webp";
 import email from "../assets/email-icon.webp";
-import x from "../assets/x_icon.webp";
 import nelTv from "../assets/nelTv-logo.webp"
 
 function Footer() {
@@ -13,21 +11,14 @@ function Footer() {
     >
       <h2 className="font-gloria text-3xl sm:text-4xl">SOCIALS</h2>
 
-      <div className="flex flex-row w-4/12 sm:w-3/12 md:w-[140px] lg:w-2/12 xl:w-[150px] 2xl:w-[150px] justify-center mt-0 ml-1 space-x-1 ">
-        <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-          <img
-            href="https://www.instagram.com"
-            target="_blank"
-            src={facebook}
-            alt="Facebook"
-            className=""
-          />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-          <img src={instagram} alt="Instagram" className="" />
-        </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-          <img src={x} alt="X Logo" />
+      <div className="flex flex-row w-2/12 sm:w-2/12 md:w-[110px] lg:w-[110px] xl:w-[110px] 2xl:w-[110px] justify-center mt-0 ml-1 space-x-1 ">
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61550263295423"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img  src={facebook} alt="Facebook" className="" />
         </a>
 
         <a href="mailto:pierreneltv@gmail.com" target="_blank" rel="noreferrer">
