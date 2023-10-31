@@ -24,7 +24,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'gloria': ['Gloria Hallelujah', 'cursive'],
+        'gloria': ['Gloria Hallelujah', cursive],
       },
       textShadow: {
         'lg': '2px 2px 10px rgba(0, 0, 0, 0.5)',
